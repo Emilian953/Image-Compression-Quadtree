@@ -1,0 +1,9 @@
+Cerinta 1: 
+
+Deschid un fisier binar si citesc tipul formatului (P6), dimensiunile (width, lengh) si valoarea maxima pe care o poate avea o culoare (255). Citim, dupa aceea imaginea sub forma unei matrici in care fiecare pixel este reprezentat de o structura RGB. Cu ajutorul matricei imagine, construim un arbore cuaternar de compresie cu ajutorul functiei quadtree(). In cadrul functiei, divizam in continuu portiuni de matrice, pana cand dimensiunea devine 1, iar media de cunoare ramane constanta. Ulterior, vom afla inaltimea arborelui, numarul de frunze, cat si dimensiunea celei mai mari frunze si stocam informatiile intr-un fisier.
+
+Cerinta 2:
+Parcurg arborele de compresie pe nivel. Daca nodul e intern, scriu 0 in fisierm altfel scriu 1, umat de valorile RGB caracteristice nodului in cauza al arborelui. Vom utiliza o coada pentru a putea scrie valorile in ordinea dorita.
+
+Cerinta 3:
+Decomprimam imaginea = reverse engineering la primele 2 parti. Cu ajutorul unui nou arbore, vom stoca in acesta infomatia citita din fiserul in care am stocat imaginea comprimata. Dupa recrerea arborelui, il transpunem pe acesta intr-o matrice, iar apoi, scriem continutul matricei intr-un fisier de iesire, in format PPM.
